@@ -1,0 +1,40 @@
+{
+  "name": "Evercuts",
+  "version": "1.0",
+  "description": "Keyboard shortcuts for the new Evernote UI",
+  "permissions": ["activeTab", "declarativeContent"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/evers16.png",
+      "32": "images/evers32.png",
+      "48": "images/evers48.png",
+      "128": "images/evers128.png"
+    }
+  },
+  "icons": {
+    "16": "images/evers16.png",
+    "32": "images/evers32.png",
+    "48": "images/evers48.png",
+    "128": "images/evers128.png"
+  },
+  "commands": {
+      "search" : {
+          "suggested_key": {
+               "default": "Alt+Q"
+          },
+          "description": "Search notes"
+      },
+      "fullscreen": {
+        "suggested_key": {
+            "default": "Alt+P"
+        },
+        "description": "Toggle fullscreen"
+      }
+  },
+  "manifest_version": 2
+}

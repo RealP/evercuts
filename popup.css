@@ -1,0 +1,13 @@
+body{
+    width: 450px;
+    height:300px;
+    padding: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+li {
+    font-size: 1.2em;
+}

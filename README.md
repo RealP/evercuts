@@ -5,6 +5,7 @@ Chrome Extension adding keyboard shortcuts to the new Evernote Web GUI.
 |----------    |-------------|
 | Click Search |  ALT+Q      |
 | Toggle Fullscreen |  ALT+P |
+| Open current note in a new tab <br> _(in fullscreen)_|  ALT+T |
 
 
 ## Usage

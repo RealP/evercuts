@@ -34,6 +34,12 @@
             "default": "Alt+P"
         },
         "description": "Toggle fullscreen"
+      },
+      "opennote": {
+        "suggested_key": {
+            "default": "Alt+T"
+        },
+        "description": "Full screen current note in a new tab"
       }
   },
   "manifest_version": 2

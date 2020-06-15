@@ -34,7 +34,19 @@
             "default": "Alt+P"
         },
         "description": "Toggle fullscreen"
+      },
+      "opennote": {
+        "suggested_key": {
+            "default": "Alt+T"
+        },
+        "description": "Full screen current note in a new tab"
       }
   },
+  "content_scripts": [
+     {
+       "matches": ["https://*.evernote.com/*"],
+       "js": ["contentScript.js"]
+     }
+   ],
   "manifest_version": 2
 }

@@ -7,6 +7,7 @@ Chrome Extension adding keyboard shortcuts to the new Evernote Web GUI.
 | Toggle Fullscreen |  ALT+P |
 | Open current note in a new tab <br> _(in fullscreen)_|  ALT+T |
 | Open note in new window | ALT+Click |
+| Open delete note dialog | ALT+Delete |
 
 
 ## Usage

@@ -46,6 +46,9 @@
             "default": "Alt+Delete"
         },
         "description": "delete current note"
+      },
+      "movenote": {
+        "description": "move note to new notebook"
       }
   },
   "content_scripts": [

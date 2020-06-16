@@ -29,5 +29,11 @@ chrome.commands.onCommand.addListener(function (command) {
             tabs[0].id,
             {file: "openNote.js"});
       });
+    } else if (command === "deletenote") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {file: "deleteNote.js"});
+      });
     }
 });

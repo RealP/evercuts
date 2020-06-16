@@ -40,6 +40,12 @@
             "default": "Alt+T"
         },
         "description": "Full screen current note in a new tab"
+      },
+      "deletenote": {
+        "suggested_key": {
+            "default": "Alt+Delete"
+        },
+        "description": "delete current note"
       }
   },
   "content_scripts": [

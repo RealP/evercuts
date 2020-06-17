@@ -15,31 +15,31 @@ chrome.commands.onCommand.addListener(function (command) {
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
           chrome.tabs.executeScript(
               tabs[0].id,
-              {file: "clickSearch.js"});
+              {file: "injectable_actions/clickSearch.js"});
         });
     } else if (command === "fullscreen") {
        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
          chrome.tabs.executeScript(
              tabs[0].id,
-             {file: "toggleFullScreen.js"});
+             {file: "injectable_actions/toggleFullScreen.js"});
        });
     } else if (command === "opennote") {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.executeScript(
             tabs[0].id,
-            {file: "openNote.js"});
+            {file: "injectable_actions/openNote.js"});
       });
     } else if (command === "deletenote") {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.executeScript(
             tabs[0].id,
-            {file: "deleteNote.js"});
+            {file: "injectable_actions/deleteNote.js"});
       });
     } else if (command === "movenote") {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.executeScript(
             tabs[0].id,
-            {file: "moveNote.js"});
+            {file: "injectable_actions/moveNote.js"});
       });
     }
 

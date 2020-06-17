@@ -4,11 +4,11 @@
   "description": "Keyboard shortcuts for the new Evernote UI",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["content_scripts/background.js"],
     "persistent": false
   },
   "page_action": {
-    "default_popup": "popup.html",
+    "default_popup": "popup/popup.html",
     "default_icon": {
       "16": "images/evers16.png",
       "32": "images/evers32.png",
@@ -45,16 +45,16 @@
         "suggested_key": {
             "default": "Alt+Delete"
         },
-        "description": "delete current note"
+        "description": "Delete current note"
       },
       "movenote": {
-        "description": "move note to new notebook"
+        "description": "Move note to new notebook"
       }
   },
   "content_scripts": [
      {
        "matches": ["https://*.evernote.com/*"],
-       "js": ["contentScript.js"]
+       "js": ["content_scripts/contentScript.js"]
      }
    ],
   "manifest_version": 2

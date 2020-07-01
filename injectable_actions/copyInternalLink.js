@@ -7,6 +7,6 @@ function openNoteActions() {
     // Open actions
     const button = document.getElementById("qa-NOTE_ACTIONS").parentElement;
     button.click();
-    setTimeout(function() { waitAndClickCopyLink(0);}, 100); // Wait .1 sec and click delete
+    setTimeout(function() { waitAndClickCopyLink(0);}, 100); // Wait .1 sec and click copy link
 }
 openNoteActions();

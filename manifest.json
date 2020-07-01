@@ -59,7 +59,6 @@
       "nextNote": {
         "description": "Go to the next note in list"
       }
-
   },
   "content_scripts": [
      {

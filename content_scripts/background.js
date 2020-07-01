@@ -41,6 +41,24 @@ chrome.commands.onCommand.addListener(function (command) {
             tabs[0].id,
             {file: "injectable_actions/moveNote.js"});
       });
+    } else if (command === "copyinternallink") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {file: "injectable_actions/copyInternalLink.js"});
+      });
+    } else if (command === "nextNote") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {file: "injectable_actions/nextNote.js"});
+      });
+    } else if (command === "previousNote") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {file: "injectable_actions/previousNote.js"});
+      });
     }
 
 });

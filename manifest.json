@@ -49,6 +49,15 @@
       },
       "movenote": {
         "description": "Move note to new notebook"
+      },
+      "copyinternallink": {
+        "description": "Copy current notes internal link"
+      },
+      "previousNote": {
+        "description": "Go to the previous note in list"
+      },
+      "nextNote": {
+        "description": "Go to the next note in list"
       }
   },
   "content_scripts": [

@@ -58,6 +58,9 @@
       },
       "nextNote": {
         "description": "Go to the next note in list"
+      },
+      "convertSearchToAny": {
+        "description": "Convert the current search to an any: search. (Useful for nested tags)"
       }
   },
   "content_scripts": [

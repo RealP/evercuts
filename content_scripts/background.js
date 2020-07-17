@@ -59,6 +59,12 @@ chrome.commands.onCommand.addListener(function (command) {
             tabs[0].id,
             {file: "injectable_actions/previousNote.js"});
       });
+    } else if (command === "convertSearchToAny") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {file: "injectable_actions/convertSearchToAny.js"});
+      });
     }
 
 });

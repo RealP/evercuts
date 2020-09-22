@@ -1,0 +1,32 @@
+body{
+    min-width: 400px;
+    display: inline-block;
+    background-color: black;
+    padding: 5px;
+}
+h2, h3 {
+    margin: 0px;
+    text-align: center;
+    color: rgb(204, 204, 204)
+}
+i {
+    font-size: 0.9em;
+    color: rgb(204, 204, 204);
+}
+table.shortcutTable{
+    border-collapse: collapse;
+    border: 1px solid rgb(204, 204, 204);
+    color:  rgb(204, 204, 204);
+    width: 100%;
+}
+table.shortcutTable td {
+    width: 50%;
+    border: 1px solid rgb(204, 204, 204);
+}
+.headerRow {
+    background-color: rgb(77, 77, 77);
+    color: rgb(204, 204, 204);
+}
+.headerCell {
+    width: 50%;
+}

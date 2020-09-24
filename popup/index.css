@@ -1,32 +1,42 @@
-body{
-    min-width: 400px;
-    display: inline-block;
+body {
     background-color: black;
+    width: 630px;
+    height: 390px;
     padding: 5px;
 }
-h2, h3 {
-    margin: 0px;
+
+h1,h2 {
+    margin-top: 0;
     text-align: center;
-    color: rgb(204, 204, 204)
-}
-i {
-    font-size: 0.9em;
     color: rgb(204, 204, 204);
 }
-table.shortcutTable{
+
+table.shortcutTable {
     border-collapse: collapse;
     border: 1px solid rgb(204, 204, 204);
-    color:  rgb(204, 204, 204);
+    color: rgb(204, 204, 204);
     width: 100%;
+    font-size: 1.1em;
 }
+
 table.shortcutTable td {
     width: 50%;
     border: 1px solid rgb(204, 204, 204);
 }
+
 .headerRow {
     background-color: rgb(77, 77, 77);
     color: rgb(204, 204, 204);
 }
+
 .headerCell {
     width: 50%;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    text-align: center;
 }

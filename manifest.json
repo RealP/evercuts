@@ -1,6 +1,6 @@
 {
   "name": "Evercuts",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Keyboard shortcuts for the new Evernote UI",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {
@@ -35,17 +35,20 @@
         },
         "description": "Toggle fullscreen"
       },
-      "opennote": {
+      "addHyperlink": {
         "suggested_key": {
-            "default": "Alt+T"
+            "default": "Alt+K"
         },
-        "description": "Full screen current note in a new tab"
+        "description": "Convert selected text to hyperlink"
       },
       "deletenote": {
         "suggested_key": {
             "default": "Alt+Delete"
         },
         "description": "Delete current note"
+      },
+      "opennote": {
+        "description": "Full screen current note in a new tab"
       },
       "movenote": {
         "description": "Move note to new notebook"

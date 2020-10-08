@@ -1,6 +1,6 @@
 {
   "name": "Evercuts",
-  "version": "1.4",
+  "version": "1.5",
   "description": "Keyboard shortcuts for the new Evernote UI",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {

@@ -1,6 +1,6 @@
 {
   "name": "Evercuts",
-  "version": "1.5",
+  "version": "1.6",
   "description": "Keyboard shortcuts for the new Evernote UI",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {
@@ -61,6 +61,9 @@
       },
       "nextNote": {
         "description": "Go to the next note in list"
+      },
+      "newNote": {
+        "description": "Create a new note"
       }
   },
   "content_scripts": [

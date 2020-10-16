@@ -13,6 +13,7 @@ Chrome Extension adding keyboard shortcuts to the new Evernote Web GUI.
 | Copy Note Link* | Not set |
 | Previous Note* | Not set |
 | Next Note* | Not set |
+| New Note* | Not set |
 
 _We are only allowed to set 4 default shortcuts. So in order to use shorcuts that are not set by default you must visit chrome://extension/shortcuts_
 

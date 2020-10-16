@@ -65,5 +65,11 @@ chrome.commands.onCommand.addListener(function (command) {
             tabs[0].id,
             {file: "injectable_actions/addHyperlink.js"});
       });
+    } else if (command === "newNote") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {file: "injectable_actions/newNote.js"});
+      });
     }
 });

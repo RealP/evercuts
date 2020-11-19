@@ -1,12 +1,14 @@
-function waitAndClickDelete (attempts) {
+function waitAndClickDelete () {
     const el = document.getElementById('qa-ACTION_DELETE');
     el.click();
 }
 
-function openDeleteDialog() {
-    // Open actions
+function openMoreActionsMenu() {
+    var evt = document.createEvent("MouseEvents");
+    evt.initEvent("mouseup", true, true);
     const button = document.getElementById("qa-NOTE_ACTIONS").parentElement;
-    button.click();
-    setTimeout(function() { waitAndClickDelete(0);}, 100); // Wait .1 sec and click delete
+    button.dispatchEvent(evt);
 }
-openDeleteDialog();
+
+openMoreActionsMenu();
+setTimeout(function() { waitAndClickDelete();}, 100); // Wait .1 sec and click delete

@@ -1,12 +1,14 @@
-function waitAndClickCopyLink (attempts) {
+function waitAndClickCopyLink () {
     const el = document.getElementById('qa-ACTION_COPY_INTERNAL_LINK');
     el.click();
 }
 
-function openNoteActions() {
-    // Open actions
+function openMoreActionsMenu() {
+    var evt = document.createEvent("MouseEvents");
+    evt.initEvent("mouseup", true, true);
     const button = document.getElementById("qa-NOTE_ACTIONS").parentElement;
-    button.click();
-    setTimeout(function() { waitAndClickCopyLink(0);}, 100); // Wait .1 sec and click copy link
+    button.dispatchEvent(evt);
 }
-openNoteActions();
+
+openMoreActionsMenu();
+setTimeout(function() { waitAndClickCopyLink();}, 100); // Wait .1 sec and click copy link

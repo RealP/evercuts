@@ -9,57 +9,18 @@
 <body>
     <h1>Evercuts is active!</h1>
     <h2>Default Shortcuts</h2>
-    <table class="shortcutTable">
+    <table id="shortcutTable" class="shortcutTable">
         <tbody>
             <tr class="headerRow">
                 <td><b>Action</b></td>
                 <td><b>Keyboard Shortcut</b></td>
             </tr>
-            <tr>
-                <td>Search Notes</td>
-                <td>ALT + Q</td>
-            </tr>
-            <tr>
-                <td>Toggle Fullscreen</td>
-                <td>ALT + P</td>
-            </tr>
-            <tr>
-                <td>Move Note</td>
-                <td>Alt + M</td>
-            </tr>
-            <tr>
-                <td>Open note in new window</td>
-                <td>ALT + Click</td>
-            </tr>
-            <tr>
-                <td>Delete note</td>
-                <td>ALT + Delete</td>
-            </tr>
-            <tr>
-                <td>Open note in new tab</td>
-                <td>Not set by default</td>
-            </tr>
-            <tr>
-                <td>Copy Notes Internal Link</td>
-                <td>Not set by default</td>
-            </tr>
-            <tr>
-                <td>Previous Note</td>
-                <td>Not set by default</td>
-            </tr>
-            <tr>
-                <td>Next Note</td>
-                <td>Not set by default</td>
-            </tr>
-            <tr>
-                <td>New Note</td>
-                <td>Not set by default</td>
-            </tr>
         </tbody>
     </table>
     <div class="footer">
-        <p>Configure these shortcuts at chrome://extensions/shortcuts</p>
+        <button id="hotkey">Click to Configure Shortcuts</button>
+        <script src="popup.js"></script>
     </div>
 </body>
-
+<script src="index.js"></script>
 </html>

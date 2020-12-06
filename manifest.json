@@ -1,6 +1,6 @@
 {
   "name": "Evercuts",
-  "version": "1.7",
+  "version": "1.8",
   "description": "Keyboard shortcuts for the new Evernote UI",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {
@@ -61,6 +61,12 @@
       },
       "newNote": {
         "description": "Create a new note"
+      },
+      "insertMenu": {
+        "description": "Opens the insert menu"
+      },
+      "editTags": {
+        "description": "Edit the current notes tags"
       }
   },
   "content_scripts": [

@@ -45,7 +45,13 @@ chrome.commands.onCommand.addListener(function (command) {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.executeScript(
             tabs[0].id,
-            {file: "injectable_actions/copyInternalLink.js"});
+            {file: "injectable_actions/copyInternalWebLink.js"});
+      });
+    } else if (command === "copyinternalapplink") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id,
+            {file: "injectable_actions/copyInternalAppLink.js"});
       });
     } else if (command === "nextNote") {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {

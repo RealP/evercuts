@@ -51,7 +51,10 @@
         "description": "Full screen current note in a new tab"
       },
       "copyinternallink": {
-        "description": "Copy current notes internal link"
+        "description": "Copy current notes internal web link"
+      },
+      "copyinternalapplink": {
+        "description": "Copy current notes internal app link"
       },
       "previousNote": {
         "description": "Go to the previous note in list"

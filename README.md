@@ -9,7 +9,8 @@ Chrome Extension adding keyboard shortcuts to the new Evernote Web GUI.
 | Open delete note dialog | ALT+Delete |
 | Move Note* | ALT+M |
 | Open current note in a new tab* <br> _(in fullscreen)_|  Not set |
-| Copy Note Link* | Not set |
+| Copy Note Web Link* | Not set |
+| Copy Note App Link* | Not set |
 | Previous Note* | Not set |
 | Next Note* | Not set |
 | New Note* | Not set |

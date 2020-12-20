@@ -1,6 +1,17 @@
-function waitAndClickDelete () {
-    const el = document.getElementById('qa-ACTION_DELETE');
-    el.click();
+function clickElementAsap(ele, timeout=2000, interval=10) {
+    var cur_wait = 0;
+    var checkExist = setInterval(function() {
+       cur_wait += interval;
+       if (cur_wait >= timeout) {
+        clearInterval(checkExist);
+        console.log("Failed to click " + ele);
+       }
+       var clickableElement = document.getElementById(ele);
+       if (clickableElement) {
+          clearInterval(checkExist);
+          clickableElement.click();
+       }
+    }, interval);
 }
 
 function openMoreActionsMenu() {
@@ -11,4 +22,4 @@ function openMoreActionsMenu() {
 }
 
 openMoreActionsMenu();
-setTimeout(function() { waitAndClickDelete();}, 100); // Wait .1 sec and click delete
+clickElementAsap('qa-ACTION_DELETE');

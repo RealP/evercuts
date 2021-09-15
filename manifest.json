@@ -1,6 +1,6 @@
 {
   "name": "Evercuts",
-  "version": "1.11",
+  "version": "1.12",
   "description": "Keyboard shortcuts for the new Evernote UI",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {
@@ -55,12 +55,6 @@
       },
       "copyinternalapplink": {
         "description": "Copy current notes internal app link"
-      },
-      "previousNote": {
-        "description": "Go to the previous note in list"
-      },
-      "nextNote": {
-        "description": "Go to the next note in list"
       },
       "newNote": {
         "description": "Create a new note"

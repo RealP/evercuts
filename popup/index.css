@@ -1,32 +1,37 @@
+html {
+    width: 800px;
+    height: 600px;
+    /*padding: 5px;*/
+    font-size: 1.5em;
+}       
+
 body {
-    background-color: black;
-    width: 630px;
-    height: 390px;
-    padding: 5px;
+    background-color: #262626;
+    overflow: hidden;
 }
-
-h1,h2 {
-    margin-top: 0;
+h3 {
+    margin: 0;
+    color: #00a82d;
+}
+h2 {
+    color: #f2f2f2;
     text-align: center;
-    color: rgb(204, 204, 204);
 }
-
 table.shortcutTable {
     border-collapse: collapse;
-    border: 1px solid rgb(204, 204, 204);
-    color: rgb(204, 204, 204);
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
     width: 100%;
-    font-size: 1.2em;
 }
 
 table.shortcutTable td {
     width: 50%;
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid #f2f2f2;
 }
 
 .headerRow {
     background-color: rgb(77, 77, 77);
-    color: rgb(204, 204, 204);
+    color: #f2f2f2;
 }
 
 .headerCell {
@@ -37,6 +42,19 @@ table.shortcutTable td {
     position: relative;
     bottom: 0;
     width: 100%;
-    color: rgb(204, 204, 204);
+    color: #f2f2f2;
     text-align: center;
+}
+
+.button {
+  background-color: #00a82d;
+  border: none;
+  border-radius: 10px;
+  color: #003013;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  cursor: pointer;
 }

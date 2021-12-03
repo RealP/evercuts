@@ -17,7 +17,7 @@ const keyboardFileMappings = {
   deletenote: 'injectable_actions/deleteNote.js',
   movenote: 'injectable_actions/moveNote.js',
   copyinternallink: 'injectable_actions/copyInternalWebLink.js',
-  copyinternalapplink: 'injectable_actions/clickSearch.js',
+  copyinternalapplink: 'injectable_actions/copyInternalAppLink.js',
   newNote: 'injectable_actions/newNote.js',
   insertMenu: 'injectable_actions/insertMenu.js',
   editTags: 'injectable_actions/editTags.js',

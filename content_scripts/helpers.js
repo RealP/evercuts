@@ -10,7 +10,7 @@ function mouseOverAndClick (ele) {
   ele.click()
 }
 
-export function waitAndClickWebLink (link) {
+function waitAndClickWebLink (link) {
   const MAX_WAIT = 1 * 1000 // 1 seconds seems like plenty
   const interval = 5 // 5ms between checks
   let curWait = 0
@@ -18,7 +18,7 @@ export function waitAndClickWebLink (link) {
     curWait += interval
     if (curWait > MAX_WAIT) {
       clearInterval(checkExist)
-      alert('Failed')
+      alert('Evercuts had an error please email me')
     }
     const ele = document.getElementById(link)
     if (ele) {
@@ -28,12 +28,12 @@ export function waitAndClickWebLink (link) {
   }, interval)
 }
 
-export function openMoreActionsMenu () {
+function openMoreActionsMenu () {
   const button = document.getElementById('qa-NOTE_ACTIONS').parentElement
   button.dispatchEvent(mouseup)
 }
 
-export function clickElementAsap (ele, timeout = 2000, interval = 10) {
+function clickElementAsap (ele, timeout = 2000, interval = 10) {
   let curWait = 0
   const checkExist = setInterval(function () {
     curWait += interval
@@ -49,7 +49,7 @@ export function clickElementAsap (ele, timeout = 2000, interval = 10) {
   }, interval)
 }
 
-export function clickFullScreen () {
+function clickFullScreen () {
   const button = document.getElementById('qa-NOTE_FULLSCREEN_BTN')
-  button.dispatchEvent(mousedown)
+  mouseOverAndClick(button)
 }

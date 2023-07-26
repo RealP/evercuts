@@ -51,4 +51,4 @@ Version 1.9 - Fixes shortcut for copying web link. Adds shortcut for copying app
 Version 1.10 - fixes toggle fullscreen for evernote web version 10.8.4
 Version 1.11 - adds shortcut to open popup
 Version 1.12 - removes shortcuts for next/prev note
-Version 1.12 - fixes toggle fullscreen for evernote web version 10.58.8 and removes shortcut for new note
+Version 1.13 - fixes toggle fullscreen for evernote web version 10.58.8 and removes shortcut for new note

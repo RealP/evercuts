@@ -53,12 +53,6 @@ chrome.commands.onCommand.addListener(function (command) {
             tabs[0].id,
             {file: "injectable_actions/copyInternalAppLink.js"});
       });
-    } else if (command === "newNote") {
-      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.executeScript(
-            tabs[0].id,
-            {file: "injectable_actions/newNote.js"});
-      });
     } else if (command === "insertMenu") {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.executeScript(

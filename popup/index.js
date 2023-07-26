@@ -1,8 +1,14 @@
+document.getElementById('hotkey').onclick = () => chrome.tabs.create({
+  url: 'chrome://extensions/configureCommands'
+})
+
 window.onload = (event) => {
   const table = document.getElementById('shortcutTable')
   let rowIdx = 0
   chrome.commands.getAll(function (commands) {
-    for (let i = 0; i <= commands.length; i++) {
+    console.log(commands)
+
+    for (let i = 0; i <= commands.length-1; i++) {
       if (commands[i].description === '') {
         commands[i].description = 'Show this popup'
       }
